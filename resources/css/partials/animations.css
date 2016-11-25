@@ -1,0 +1,51 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.scene_element {
+  background: pink;
+  animation-duration: 2s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.scene_element--fadein {
+  animation-name: fadeIn;
+}
+.scene_element--fadeinup {
+  animation-name: fadeInUp;
+}
+.scene_element--fadeinright {
+  animation-name: fadeInRight;
+}
+.m-scene.is-exiting .scene-element {
+  animation-direction: alternate-reverse;
+}
