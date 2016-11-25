@@ -1,0 +1,51 @@
+#header, #case-studies, #experiments {
+  display: flex;
+}
+#page-wrap {
+  position: relative;
+}
+#header {
+  align-items: center;
+}
+#logo {
+  flex-grow: 1;
+}
+#nav {
+  flex-grow: 0;
+  justify-content: flex-end;
+}
+#social {
+}
+#hero {
+  min-height: 100vh;
+}
+#case-studies {
+  flex-direction: column;
+}
+#experiments {
+  align-items: flex-start;
+}
+#footer {
+  min-height: 500px;
+}
+.nav-links {
+  list-style: disc;
+}
+.nav-links li {
+  display: inline-block;
+}
+.hero--text__main {
+
+}
+.hero--text__sub {
+
+}
+.case-study {
+  display: block;
+  min-height: 500px;
+  width: 40vw;
+  margin: 2rem auto;
+}
+.experiment {
+  width: 25%;
+}

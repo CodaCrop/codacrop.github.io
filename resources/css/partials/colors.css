@@ -1,7 +1,27 @@
 body {
-  background: #ef233c;
-  color: #edf2f4;
 }
 a {
   color: #edf2f4;
+}
+#header {
+  background: #2b2d42;
+}
+#hero {
+  background: #2b2d42;
+  color: #000;
+}
+#hero h1, #hero h2 {
+  color: #FFF;
+}
+#case-studies {
+  background: #edf2f4;
+}
+#experiments {
+  background: #8d99ae;
+}
+#footer {
+  background: #2b2d42;
+}
+.case-study {
+    background: #000;
 }

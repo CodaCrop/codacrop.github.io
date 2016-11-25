@@ -1,4 +1,10 @@
-a {
-  text-decoration: none;
-  font-style: italic;
+a svg {
+  width: 40px;
+  height: 20px;
+}
+.cta-1 {
+  background: linear-gradient(to right, #d90429, #ef233c);
+  color: #FFF;
+  border: none;
+  padding: 1rem 2rem;
 }

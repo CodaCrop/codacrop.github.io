@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  // SmoothScroll setuo
+  smoothScroll.init();
+  
+  // Standard smoothState setup
   $(function(){
     'use strict';
     var $page = $('#main'),
