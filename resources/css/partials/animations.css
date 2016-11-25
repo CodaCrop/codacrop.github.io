@@ -31,11 +31,15 @@
     transform: none;
   }
 }
-.scene_element {
-  background: pink;
-  animation-duration: 2s;
-  transition-timing-function: ease-in;
-  animation-fill-mode: both;
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
 }
 .scene_element--fadein {
   animation-name: fadeIn;
@@ -46,6 +50,12 @@
 .scene_element--fadeinright {
   animation-name: fadeInRight;
 }
-.m-scene.is-exiting .scene-element {
-  animation-direction: alternate-reverse;
+.scene_element {
+  background: pink;
+  animation-duration: 2s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.m-scene.is-exiting .scene_element {
+  animation-name: fadeOut;
 }
