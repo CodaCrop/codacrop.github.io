@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // SmoothScroll setuo
   smoothScroll.init();
-  
+
   // Standard smoothState setup
   $(function(){
     'use strict';
@@ -12,7 +12,7 @@ $(document).ready(function() {
           prefetch: true,
           cacheLength: 2,
           onStart: {
-            duration: 2000, // Duration of our animation
+            duration: 250, // Duration of our animation
             render: function ($container) {
               // Add your CSS animation reversing class
               $container.addClass('is-exiting');
@@ -31,6 +31,16 @@ $(document).ready(function() {
           }
         },
         smoothState = $page.smoothState(options).data('smoothState');
+  });
+
+  // Hide main navigation menu on scroll
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+      if (y > ($('#hero').height() - 100)) {
+        $('#header').slideUp(150);
+      } else {
+        $('#header').slideDown(150);
+      }
   });
 
 });

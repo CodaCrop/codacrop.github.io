@@ -14,7 +14,7 @@ a {
   color: #FFF;
 }
 #case-studies {
-  background: #edf2f4;
+  background: #b4654a;
 }
 #experiments {
   background: #8d99ae;
@@ -23,5 +23,18 @@ a {
   background: #2b2d42;
 }
 .case-study {
-    background: #000;
+    box-shadow: 0 20px 80px 0 rgba(0,0,0,.45);
+}
+.go-next {
+    color: #FFF;
+}
+.experiment {
+  background-color: #c2c5bb;
+  box-shadow: 0 20px 60px 0 rgba(0,0,0,.15);
+}
+.cta-1 {
+  background: linear-gradient(to right, #157a6e, #499f68);
+  box-shadow: 0 20px 80px 0 rgba(0,0,0,.25);
+  color: #FFF;
+  border: none;
 }
