@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-  // SmoothScroll setuo
-  smoothScroll.init();
-
   // Standard smoothState setup
   $(function(){
     'use strict';
@@ -33,14 +30,23 @@ $(document).ready(function() {
         smoothState = $page.smoothState(options).data('smoothState');
   });
 
-  // Hide main navigation menu on scroll
-  $(document).scroll(function() {
-    var y = $(this).scrollTop();
-      if (y > ($('#hero').height() - 100)) {
-        $('#header').slideUp(150);
-      } else {
-        $('#header').slideDown(150);
-      }
+  // Fixed header setup
+  $('#header').headroom({
+    classes : {
+      initial: "topnav",
+      pinned: "topnav--pinned",
+      unpinned: "topnav--unpinned",
+      top: "",
+      notTop: ""
+    }
+  });
+
+  // SmoothScroll setup
+  smoothScroll.init({
+    selector: '[data-scroll]',
+    selectorHeader: null,
+    speed: 600,
+    easing: 'easeInOutCubic'
   });
 
 });

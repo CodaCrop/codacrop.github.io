@@ -3,6 +3,9 @@ body {
 a {
   color: #edf2f4;
 }
+#logo {
+  color #FFF;
+}
 #header {
   background: #2b2d42;
 }
