@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { AppComponent }   from './app.component';
+import { AppComponent }   from './app.component.js';
 import { BookingComponent } from './booking.component';
 import { BookingDataComponent } from './booking-data.component';
 
