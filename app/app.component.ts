@@ -11,6 +11,8 @@ import { Observable } from 'rxjs/Rx';
   templateUrl: 'app.component.html',
 })
 
+// The original component, not active since redirect will automatically go towards
+// booking.component.ts
 export class AppComponent {
 
   booking: FormGroup;

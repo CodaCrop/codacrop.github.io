@@ -4,6 +4,7 @@ import { Http } from '@angular/http';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Booking } from './booking.interface';
 
+// The initial page will run on a template and contains animations for error handling
 @Component({
   moduleId: module.id,
   selector: 'app-root',
@@ -25,7 +26,7 @@ import { Booking } from './booking.interface';
 })
 
 export class BookingComponent {
-  
+
   bookingCode:string;
   show:boolean = false;
   booking: FormGroup;
