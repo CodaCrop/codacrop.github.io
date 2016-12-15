@@ -38,7 +38,7 @@
     packages: {
       app: {
         main: './main.ts',
-        defaultExtension: 'ts'
+        defaultExtension: 'js'
       },
       rxjs: {
         defaultExtension: 'js'
