@@ -21,9 +21,9 @@ header > h1 {
   width: 350px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   border: 1px solid #004145;
+  margin-bottom: 5rem;
 }
 .container-2 {
   width: 700px;
@@ -41,6 +41,7 @@ header > h1 {
   position: relative;
   color: #003145;
   margin-bottom: 4rem;
+  font-weight: 600;
   padding: 1rem;
 }
 .container > p {
@@ -51,7 +52,7 @@ header > h1 {
   content: "";
   border: 3px solid #003145;
   position: absolute;
-  top: 95px;
+  top: 11.5rem;
   left: 145px;
   width: 30px;
 }
@@ -117,4 +118,24 @@ fieldset[disabled] .btn-default.focus, fieldset[disabled]
   color: #FFF;
   cursor: default;
   outline: 0;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    border: none;
+  }
+  .btn-default {
+    width: 95%;
+  }
+  .form-group > small {
+    background: none;
+    color: #d40504;
+    padding: 0;
+    margin: 0;
+    left: 1rem;
+    top: 7.3rem;
+    border: none;
+  }
+  .form-group > small:after {
+    display: none;
+  }
 }
