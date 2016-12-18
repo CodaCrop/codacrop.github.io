@@ -10,6 +10,7 @@ export class DataPipe implements PipeTransform {
   transform(value: any, args: string[]): any {
     let filter = [];
     for(let key in value) {
+      console.log('test')
       filter.push(key)
     }
     return filter;

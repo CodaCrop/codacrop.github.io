@@ -15,17 +15,18 @@ var DataPipe = (function () {
     DataPipe.prototype.transform = function (value, args) {
         var filter = [];
         for (var key in value) {
+            console.log('test');
             filter.push(key);
         }
         return filter;
     };
-    DataPipe = __decorate([
-        core_1.Pipe({
-            name: 'filter'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], DataPipe);
     return DataPipe;
 }());
+DataPipe = __decorate([
+    core_1.Pipe({
+        name: 'filter'
+    }),
+    __metadata("design:paramtypes", [])
+], DataPipe);
 exports.DataPipe = DataPipe;
 //# sourceMappingURL=data.pipe.js.map
