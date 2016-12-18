@@ -120,7 +120,7 @@ fieldset[disabled] .btn-default.focus, fieldset[disabled]
   outline: 0;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 801px and max-width: 1080px) {
   .container-2 {
     width: 90vw;
   }
