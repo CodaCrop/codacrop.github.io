@@ -129,11 +129,22 @@ fieldset[disabled] .btn-default.focus, fieldset[disabled]
   .container-2 > pre {
     width: 100%;
   }
+  p {
+    margin: 0;
+  }
   .container {
     border: none;
+    width: 275px;
+  }
+  .container h1 {
+    font-size: 2.5em;
+  }
+  .container > h1::after {
+    top: 11.3rem;
+    left: 107px;
   }
   .btn-default {
-    width: 95%;
+    width: 92.5%;
   }
   .form-group > small {
     background: none;
