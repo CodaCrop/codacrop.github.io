@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Component, Injectable, Pipe, PipeTransform } from '@angular/core';
 import { Router, CanActivate } from '@angular/router';
 import { Http, Response } from '@angular/http';
@@ -34,7 +33,6 @@ export class BookingDataComponent {
   }
 
 }
-=======
 import { Component, Injectable, Pipe, PipeTransform } from '@angular/core';
 import { Router, CanActivate } from '@angular/router';
 import { Http, Response } from '@angular/http';
@@ -70,4 +68,3 @@ export class BookingDataComponent {
   }
 
 }
->>>>>>> e31e2be1b0d2051ef2a3a6016a9dc7193cd9e0ad
