@@ -8,20 +8,8 @@ import { Observable } from 'rxjs/Rx';
 @Component({
   moduleId: module.id,
   selector: 'booking',
-  templateUrl: 'app.component.html',
+  templateUrl: 'app.component.html'
 })
 
-// The original component, not active since redirect will automatically go towards
-// booking.component.ts
-export class AppComponent {
-
-  booking: FormGroup;
-  bookingcode: FormGroup;
-
-  constructor(
-    private http: Http,
-    private route: ActivatedRoute,
-    private router: Router
-  ) { }
-
-}
+// The original component, not active since redirect will automatically go towards booking
+export class AppComponent {}

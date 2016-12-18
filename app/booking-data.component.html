@@ -1,20 +1,9 @@
 <header><h1>YOUR DATA</h1></header>
 <div class="container-2">
-  <table>
-    <tr>
-      <th>"bookingCode": "PZIGZ3"</th>
-    </tr>
-    <tr>
-      <td>"contactDetails"</td>
-      <td>"@class": "EmailAddress"</td>
-      <td>"address": "TRAINER@YAHOO.FR"</td>
-    </tr>
-    <tr>
-      <td>"itinerary"</td>
-      <td>"type": "ONE_WAY"</td>
-      <td>"destination"</td>
-      <td>"name": "Cote D'Azur Airport"</td>
-    </tr>
-  </table>
+  <ul>
+    <li>
+      {{result | json}}
+    </li>
+  </ul>
 </div>
 <router-outlet></router-outlet>
