@@ -127,6 +127,9 @@ fieldset[disabled] .btn-default.focus, fieldset[disabled]
   .container-2 {
     width: 100vw;
   }
+  .container-2 > pre {
+    width: 100%;
+  }
   booking {
     display: flex;
     justify-content: center;
