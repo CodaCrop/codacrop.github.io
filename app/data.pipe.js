@@ -28,25 +28,4 @@ DataPipe = __decorate([
     __metadata("design:paramtypes", [])
 ], DataPipe);
 exports.DataPipe = DataPipe;
-exports.DataPipe = DataPipe;
-var DataPipe = (function () {
-    function DataPipe() {
-    }
-    DataPipe.prototype.transform = function (value, args) {
-        var filter = [];
-        for (var key in value) {
-            filter.push(key);
-        }
-        return filter;
-    };
-    return DataPipe;
-}());
-DataPipe = __decorate([
-    core_1.Pipe({
-        name: 'filter'
-    }),
-    __metadata("design:paramtypes", [])
-], DataPipe);
-exports.DataPipe = DataPipe;
-exports.DataPipe = DataPipe;
 //# sourceMappingURL=data.pipe.js.map
