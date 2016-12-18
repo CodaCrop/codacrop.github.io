@@ -124,6 +124,9 @@ fieldset[disabled] .btn-default.focus, fieldset[disabled]
   header {
     margin-bottom: 1vh;
   }
+  .container-2 {
+    width: 100vw;
+  }
   booking {
     display: flex;
     justify-content: center;
