@@ -38,33 +38,4 @@ BookingDataComponent = __decorate([
     __metadata("design:paramtypes", [http_1.Http])
 ], BookingDataComponent);
 exports.BookingDataComponent = BookingDataComponent;
-exports.BookingDataComponent = BookingDataComponent;
-require("rxjs/add/operator/mergeMap");
-require("rxjs/add/operator/map");
-var BookingDataComponent = (function () {
-    function BookingDataComponent(http) {
-        this.http = http;
-    }
-    BookingDataComponent.prototype.ngOnInit = function () {
-        this.getData();
-    };
-    BookingDataComponent.prototype.getData = function () {
-        var _this = this;
-        this.http.get('../assets/mock/mock.json')
-            .map(function (res) { return res.json(); })
-            .subscribe(function (data) { _this.result = data, console.log('test'); }, function (err) { console.log(err), console.log('error'); }, function () { return console.log('done'); });
-    };
-    return BookingDataComponent;
-}());
-BookingDataComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app-root',
-        templateUrl: 'booking-data.component.html',
-        providers: [data_pipe_1.DataPipe]
-    }),
-    __metadata("design:paramtypes", [http_1.Http])
-], BookingDataComponent);
-exports.BookingDataComponent = BookingDataComponent;
-exports.BookingDataComponent = BookingDataComponent;
 //# sourceMappingURL=booking-data.component.js.map
