@@ -13,7 +13,8 @@ var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
 var router_1 = require('@angular/router');
 var forms_1 = require('@angular/forms');
-var app_component_1 = require('./app.component');
+var data_pipe_1 = require('./data.pipe');
+var app_component_js_1 = require('./app.component.js');
 var booking_component_1 = require('./booking.component');
 var booking_data_component_1 = require('./booking-data.component');
 var app_routing_module_1 = require('./app-routing.module');
@@ -23,8 +24,8 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(app_routing_module_1.AppRoutes), http_1.HttpModule, forms_1.FormsModule, forms_1.ReactiveFormsModule],
-            declarations: [app_component_1.AppComponent, booking_component_1.BookingComponent, booking_data_component_1.BookingDataComponent],
-            bootstrap: [app_component_1.AppComponent]
+            declarations: [app_component_js_1.AppComponent, booking_component_1.BookingComponent, booking_data_component_1.BookingDataComponent, data_pipe_1.DataPipe],
+            bootstrap: [app_component_js_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

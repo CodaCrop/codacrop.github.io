@@ -8,26 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
-var router_1 = require("@angular/router");
+var core_1 = require('@angular/core');
 var AppComponent = (function () {
-    function AppComponent(http, route, router) {
-        this.http = http;
-        this.route = route;
-        this.router = router;
+    function AppComponent() {
     }
+    AppComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'booking',
+            templateUrl: 'app.component.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'booking',
-        templateUrl: 'app.component.html',
-    }),
-    __metadata("design:paramtypes", [http_1.Http,
-        router_1.ActivatedRoute,
-        router_1.Router])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
