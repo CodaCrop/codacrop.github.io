@@ -129,12 +129,6 @@ fieldset[disabled] .btn-default.focus, fieldset[disabled]
     justify-content: center;
     align-items: center;
   }
-  .container-2 {
-    width: 90vw;
-  }
-  .container-2 > pre {
-    width: 100%;
-  }
   .container {
     border: none;
   }
@@ -152,5 +146,11 @@ fieldset[disabled] .btn-default.focus, fieldset[disabled]
   }
   .form-group > small:after {
     display: none;
+  }
+  .container-2 {
+    width: 90vw;
+  }
+  .container-2 > pre {
+    width: 100%;
   }
 }
