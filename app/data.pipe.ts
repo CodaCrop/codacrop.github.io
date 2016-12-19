@@ -10,8 +10,9 @@ export class DataPipe implements PipeTransform {
   transform(value: any, args: string[]): any {
     let filter = [];
     for(let key in value) {
-      console.log('test')
-      filter.push(key)
+      if(value.hasOwnProperty(key)) {
+        filter.push({key: key, value: value[key]})
+      }
     }
     return filter;
   }

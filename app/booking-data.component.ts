@@ -9,8 +9,7 @@ import 'rxjs/add/operator/map';
 @Component({
   moduleId: module.id,
   selector: 'app-root',
-  templateUrl: 'booking-data.component.html',
-  providers: [DataPipe]
+  templateUrl: 'booking-data.component.html'
 })
 
 export class BookingDataComponent {
@@ -26,8 +25,8 @@ export class BookingDataComponent {
     this.http.get('../assets/mock/mock.json')
       .map((res:Response) => res.json())
       .subscribe(
-        data => { this.result = data, console.log('test') },
-        err => { console.log(err), console.log('error') },
+        data => { this.result = data },
+        err => { console.log(err) },
         () => console.log('done')
       );
   }

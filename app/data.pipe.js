@@ -15,8 +15,9 @@ var DataPipe = (function () {
     DataPipe.prototype.transform = function (value, args) {
         var filter = [];
         for (var key in value) {
-            console.log('test');
-            filter.push(key);
+            if (value.hasOwnProperty(key)) {
+                filter.push({ key: key, value: value[key] });
+            }
         }
         return filter;
     };

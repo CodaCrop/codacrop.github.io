@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
-var data_pipe_1 = require('./data.pipe');
 require('rxjs/add/operator/mergeMap');
 require('rxjs/add/operator/map');
 var BookingDataComponent = (function () {
@@ -24,14 +23,13 @@ var BookingDataComponent = (function () {
         var _this = this;
         this.http.get('../assets/mock/mock.json')
             .map(function (res) { return res.json(); })
-            .subscribe(function (data) { _this.result = data, console.log('test'); }, function (err) { console.log(err), console.log('error'); }, function () { return console.log('done'); });
+            .subscribe(function (data) { _this.result = data; }, function (err) { console.log(err); }, function () { return console.log('done'); });
     };
     BookingDataComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'app-root',
-            templateUrl: 'booking-data.component.html',
-            providers: [data_pipe_1.DataPipe]
+            templateUrl: 'booking-data.component.html'
         }), 
         __metadata('design:paramtypes', [http_1.Http])
     ], BookingDataComponent);

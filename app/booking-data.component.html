@@ -1,5 +1,15 @@
 <header><h1>YOUR DATA</h1></header>
 <div class="container-2">
-    <pre> {{result | json}} </pre>
+  <ul *ngFor="let main of result | filter">
+    <li>
+      {{ main.key }}
+      <ul>
+        <li *ngFor="let val of main | filter">
+          {{ val.key }} = {{ val.value }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <pre> {{ result | json }} </pre>
 </div>
 <router-outlet></router-outlet>

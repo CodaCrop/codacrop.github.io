@@ -10,25 +10,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
+var http_1 = require('@angular/http');
 var router_1 = require('@angular/router');
 // The initial page will run on a template and contains animations for error handling
 var BookingComponent = (function () {
-    function BookingComponent(route, router) {
+    function BookingComponent(route, router, http) {
         this.route = route;
         this.router = router;
+        this.http = http;
         this.show = false;
     }
     BookingComponent.prototype.ngOnInit = function () {
         // Validate form through FormControl and Validators
+        this.getBookingCode();
         this.booking = new forms_1.FormGroup({
             bookingcode: new forms_1.FormControl('', [forms_1.Validators.required, forms_1.Validators.minLength(5), forms_1.Validators.maxLength(6), forms_1.Validators.pattern('[A-Z2-9 ]*')]),
             familyname: new forms_1.FormControl('', [forms_1.Validators.required, forms_1.Validators.minLength(2), forms_1.Validators.maxLength(30), forms_1.Validators.pattern('[a-zA-Z ]*')])
         });
     };
+    BookingComponent.prototype.getBookingCode = function () {
+        var _this = this;
+        this.http.get('../assets/mock/mock.json')
+            .map(function (res) { return res.json(); })
+            .subscribe(function (data) { _this.result = data; }, function (err) { console.log(err); }, function () { return console.log('done'); });
+    };
     BookingComponent.prototype.onSubmit = function (_a) {
         var value = _a.value, valid = _a.valid;
-        // If bookingcode equals PZIGZ23; then go to booking data
-        if (value.bookingcode == 'PZIGZ3') {
+        // If bookingcode equals PZIGZ3; then go to booking data
+        if (value.bookingcode == this.result.bookingCode) {
             this.router.navigate(['booking-data']);
         }
         console.log(value.bookingcode, valid);
@@ -51,7 +60,7 @@ var BookingComponent = (function () {
                 ])
             ]
         }), 
-        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router])
+        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, http_1.Http])
     ], BookingComponent);
     return BookingComponent;
 }());
